@@ -16,16 +16,17 @@ import Modal from '../Modal';
 import topTv from '../../data/top10tv';
 import { useState } from 'react';
 export default function Section4(props) {
-    const tvList = topTv();
-    const [topRightModal, setTopRightModal] = useState(false);
-    const { channel } = props;
+  const tvList = topTv();
+  const [topRightModal, setTopRightModal] = useState(false);
+  const { channel } = props;
 
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const BUTTON_WRAPPER_STYLES = {
-        position: 'relative',
-        zIndex: 1,
-    };
+  const BUTTON_WRAPPER_STYLES = {
+    position: 'relative',
+    zIndex: 1,
+  };
+
 
     const toggleShow = () => setTopRightModal(!topRightModal);
     return (
