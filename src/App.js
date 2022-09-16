@@ -2,6 +2,8 @@ import './App.scss';
 import TopNav from './components/TopNav';
 import ChannelsNav from './components/ChannelsNav';
 import LeftNav from './components/LeftNav';
+import Section4 from './components/Section4/Section4';
+import Section5 from './components/Section5/Section5';
 
 function App() {
   return (
@@ -16,6 +18,11 @@ function App() {
           <div className="a_site__columnRight">
             <TopNav />
             <ChannelsNav />
+
+            <div className="a_site__flexboxContent">
+              <Section4 />
+              <Section5 />
+            </div>
           </div>
         </div>
       </section>
