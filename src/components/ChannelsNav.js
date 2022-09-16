@@ -21,12 +21,13 @@ const BUTTON_MODAL_STYLES = {
   padding: '10px',
 };
 
-function ChannelsNav() {
+function ChannelsNav(props) {
+  const { handler } = props
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="a_channelsNav">
-      <div className="a_channelsNav__imageBG">
+      <div className="a_channelsNav__imageBG" onClick={() => { handler("netflix") }}>
         <div className="a_buttonModal" style={BUTTON_WRAPPER_STYLES}>
           <img
             src={NeflixLogo}
@@ -37,9 +38,9 @@ function ChannelsNav() {
           {/* 
 
 */}
-          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          {/* <Modal open={isOpen} onClose={() => setIsOpen(false)}>
             Fancy Modal
-          </Modal>
+          </Modal> */}
           {/* 
 
 */}
@@ -48,7 +49,7 @@ function ChannelsNav() {
           Modal Content
         </div> */}
       </div>
-      <div className="a_channelsNav__imageBG">
+      <div className="a_channelsNav__imageBG" onClick={() => { handler("prime") }}>
         <img src={AmazonLogo} className="a_channelsNav__amazon" alt="netflix" />
       </div>
       <div className="a_channelsNav__imageBG">
