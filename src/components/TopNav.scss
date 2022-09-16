@@ -1,0 +1,27 @@
+@use '../styles/index.scss' as *;
+
+.a_topnav {
+  padding-top: 55px;
+
+  &__logo {
+    padding-left: 32px;
+    padding-right: 55px;
+  }
+  &__flexrow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__Input {
+    width: 541px;
+    height: 50px;
+    color: $color-white;
+    background-color: $color-purple-light;
+    border: solid $color-white;
+    padding: $spacing-small;
+    border-radius: 10px;
+    &::placeholder {
+      color: $color-white;
+    }
+  }
+}

@@ -11,10 +11,19 @@
     position: relative;
   }
 
+  &__columnLeftBackground {
+    width: 120px;
+    height: 1000px;
+    background-color: #363636;
+  }
   &__columnLeft {
     width: 120px;
     height: 1000px;
     background-color: $color-purple-dark;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    position: absolute;
+    z-index: 1;
   }
   &__columnRightBackground {
     background-color: $color-purple-dark;
@@ -23,7 +32,7 @@
   &__columnRight {
     width: 1479px;
     height: 1000px;
-    background-color: white;
+    background-color: $color-black;
     border-radius: 40px;
     left: 120px;
     position: absolute;
