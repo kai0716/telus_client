@@ -31,25 +31,17 @@ export default function Section4(props) {
     return (
         <div className="k__section4">
             <div className="k-s4__cover">
-                <Carousel className="k-s4__onCLickModal"
-                    onClick={() => setIsOpen(true)}>
-                    <Carousel.Item interval={5000} >
+                <Carousel >
+                    <Carousel.Item interval={5000} className="k-s4__onCLickModal"
+                        onClick={() => setIsOpen(true)}>
                         {channel === "none" ?
-                            <img className="k-s4__cover-img" src={primeCover3} alt="Second slide" /> :
+                            <img className="k-s4__cover-img" src={image0} alt="Second slide" /> :
                             channel === "prime" ?
                                 <img className="k-s4__cover-img" src={primeCover1} alt="Second slide" />
                                 :
                                 <img className="k-s4__cover-img" src={netflixCover1} alt="Second slide" />
                         }
-                        <Carousel.Caption>
-                            <h3
-                            // className="k-s4__onCLickModal"
-                            // onClick={() => setIsOpen(true)}
-                            >
-                                First slide label
-                            </h3>
 
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         {channel === "none" ?
@@ -60,9 +52,6 @@ export default function Section4(props) {
                                 <img className="k-s4__cover-img" src={netflixCover2} alt="Second slide" />
                         }
 
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={5000}>
                         {channel === "none" ?
@@ -72,9 +61,7 @@ export default function Section4(props) {
                                 :
                                 <img className="k-s4__cover-img" src={netflixCover3} alt="Second slide" />
                         }
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                        </Carousel.Caption>
+
                     </Carousel.Item>
                 </Carousel>
                 <Modal open={isOpen} onClose={() => setIsOpen(false)}>
@@ -90,9 +77,11 @@ export default function Section4(props) {
                             <>
                                 <img
                                     key={e.id}
-                                    className="k-s4__list-img"
+                                    className="k-s4__list-img k-s4__onCLickModal"
                                     src={e.image}
                                     alt=""
+
+                                    onClick={() => setIsOpen(true)}
                                 />
                             </>
                         )
