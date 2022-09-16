@@ -5,15 +5,49 @@ import AppleLogo from '../assets/figma/apple.png';
 import HayuLogo from '../assets/figma/hahu.png';
 import HBOLogo from '../assets/figma/hbomax.png';
 
+import Modal from './Modal';
+
+import React, { useState } from 'react';
+
+const BUTTON_WRAPPER_STYLES = {
+  position: 'relative',
+  zIndex: 1,
+};
+
+const BUTTON_MODAL_STYLES = {
+  position: 'relative',
+  zIndex: 10,
+  backgroundColor: '#ffffff',
+  padding: '10px',
+};
+
 function ChannelsNav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="a_channelsNav">
       <div className="a_channelsNav__imageBG">
-        <img
-          src={NeflixLogo}
-          className="a_channelsNav__netflix"
-          alt="netflix"
-        />
+        <div className="a_buttonModal" style={BUTTON_WRAPPER_STYLES}>
+          <img
+            onClick={() => setIsOpen(true)}
+            src={NeflixLogo}
+            className="a_channelsNav__netflix"
+            alt="netflix"
+          />
+
+          {/* 
+
+*/}
+          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+            Fancy Modal
+          </Modal>
+          {/* 
+
+*/}
+        </div>
+        {/* <div className="a_modal" style={BUTTON_MODAL_STYLES}>
+          Modal Content
+        </div> */}
       </div>
       <div className="a_channelsNav__imageBG">
         <img src={AmazonLogo} className="a_channelsNav__amazon" alt="netflix" />
