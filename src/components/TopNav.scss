@@ -22,16 +22,15 @@
   &__Input {
     width: 541px;
     height: 50px;
-    color: $color-white;
-    background-color: $color-purple-light;
-    border: solid $color-white;
+    color: $color-grey-dark;
+    background-color: #1f2121;
+    border: solid $color-black;
     padding: $spacing-small;
-    border-radius: 10px;
-    outline-color: $color-white;
+    border-radius: 25px;
     background-image: url('../assets/figma/search.png') no-repeat right;
     background-size: 20px;
     &::placeholder {
-      color: $color-white;
+      color: $color-grey-dark;
     }
   }
   &__searchIcon {
@@ -39,6 +38,7 @@
     left: 845px;
     top: 85px;
     z-index: 2;
+    filter: brightness(60%);
   }
 
   &__rightgroup {
@@ -55,7 +55,6 @@
   }
 
   &__flex {
-    padding-top: 2px;
     display: flex;
     align-items: baseline;
     gap: 6px;
