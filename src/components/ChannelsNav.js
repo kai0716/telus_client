@@ -29,7 +29,6 @@ function ChannelsNav() {
       <div className="a_channelsNav__imageBG">
         <div className="a_buttonModal" style={BUTTON_WRAPPER_STYLES}>
           <img
-            onClick={() => setIsOpen(true)}
             src={NeflixLogo}
             className="a_channelsNav__netflix"
             alt="netflix"
