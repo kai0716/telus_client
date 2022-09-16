@@ -1,0 +1,32 @@
+@use './styles/index' as *;
+
+.a_site {
+  padding-top: 20px;
+  max-width: 1599px;
+  margin: auto;
+
+  &__flexcolumn {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  &__columnLeft {
+    width: 120px;
+    height: 1000px;
+    background-color: $color-purple-dark;
+  }
+  &__columnRightBackground {
+    background-color: $color-purple-dark;
+    width: 100px;
+  }
+  &__columnRight {
+    width: 1479px;
+    height: 1000px;
+    background-color: white;
+    border-radius: 40px;
+    left: 120px;
+    position: absolute;
+    z-index: 1;
+  }
+}
