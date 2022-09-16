@@ -9,7 +9,7 @@ function LeftNav() {
     <div className="a_leftNav">
       <div className="--back">
         <div className="a_leftNav__imageBG">
-          <img src={HomeLogo} className="a_leftNav__home" alt="home" />
+          <a src="/"><img src={HomeLogo} className="a_leftNav__home" alt="home" /></a>
         </div>
         <p>Home</p>
       </div>

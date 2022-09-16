@@ -14,11 +14,6 @@
             opacity: 0.7;
             transition-duration: 1.5s;
             position: relative;
-
-            :after {
-                position: absolute;
-                content: " - Remember this Movie";
-            }
         }
     }
 
@@ -29,6 +24,7 @@
         border-radius: 50px;
         margin-bottom: 20px;
         margin-right: 17px;
+
     }
 
     &__title {
@@ -54,4 +50,8 @@ p {
 
 MDBModalTitle {
     background-color: gold;
+}
+
+h3 {
+    padding-bottom: 50px;
 }
