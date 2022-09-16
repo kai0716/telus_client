@@ -1,5 +1,5 @@
-import image from '../../assets/images/image9.jpg';
-import image0 from '../../assets/images/image0.jpg';
+import image from '../../assets/images/image1.png';
+import image0 from '../../assets/images/image0.png';
 import './Section4.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -8,8 +8,8 @@ import Modal from '../Modal';
 import topTv from '../../data/top10tv';
 import { useState } from 'react';
 export default function Section4(props) {
-  const tvList = topTv();
-  const [topRightModal, setTopRightModal] = useState(false);
+    const tvList = topTv();
+    const [topRightModal, setTopRightModal] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
 

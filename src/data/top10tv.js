@@ -1,13 +1,11 @@
-import image0 from '../assets/images/image0.jpg'
-import image1 from '../assets/images/image1.jpg'
-import image2 from '../assets/images/image2.jpg'
-import image3 from '../assets/images/image3.jpg'
-import image4 from '../assets/images/image4.jpg'
-import image5 from '../assets/images/image5.jpg'
-import image6 from '../assets/images/image6.jpg'
-import image7 from '../assets/images/image7.jpg'
-import image8 from '../assets/images/image8.jpg'
-import image9 from '../assets/images/image9.jpg'
+import image0 from '../assets/images/image0.png'
+import image1 from '../assets/images/image1.png'
+import image2 from '../assets/images/image2.png'
+import image3 from '../assets/images/image3.png'
+import image4 from '../assets/images/image4.png'
+import image5 from '../assets/images/image5.png'
+import image6 from '../assets/images/image6.png'
+
 export default function TVList() {
     const tv = [
         {
@@ -72,34 +70,7 @@ export default function TVList() {
             rating: "8.9",
             channel: "AMC",
             image: image6
-        },
-        {
-            id: "7",
-            title: "Devil in Ohio",
-            description: "When a psychiatrist shelters a mysterious cult escapee, her world is turned upside down as the girl's arrival threatens to tear her own family apart.",
-            genre: "Horror",
-            rating: "5.9",
-            channel: "NETFLIX",
-            image: image7
-        },
-        {
-            id: "8",
-            title: "Stranger Things",
-            description: "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
-            genre: "Drama",
-            rating: "8.7",
-            channel: "NETFLIX",
-            image: image8
-        },
-        {
-            id: "9",
-            title: "The Crown",
-            description: "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
-            genre: "Biography",
-            rating: "8.7",
-            channel: "NETFLIX",
-            image: image9
-        },
+        }
     ]
 
     return tv;
