@@ -45,6 +45,7 @@
     display: flex;
     align-items: center;
     padding-right: 32px;
+    height: 40px;
   }
 
   &__right-col1 {
@@ -61,8 +62,13 @@
   }
   &__name {
     font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   &__premium {
     font-size: 16px;
+  }
+  &__avatar {
+    width: 50px;
   }
 }
