@@ -35,6 +35,7 @@ export default function Section4(props) {
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item interval={5000}>
             <img className="k-s4__cover-img" src={image0} alt="Second slide" />
             <Carousel.Caption>
