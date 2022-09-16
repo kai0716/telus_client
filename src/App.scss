@@ -1,5 +1,10 @@
 @use './styles/index' as *;
 
+.App {
+  background-color: #363636;
+  height: 100vh;
+}
+
 .a_site {
   padding-top: 20px;
   max-width: 1599px;
