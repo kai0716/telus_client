@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   &__leftgroup {
     display: flex;
@@ -36,7 +37,7 @@
   &__searchIcon {
     position: absolute;
     left: 845px;
-    top: 66px;
+    top: 85px;
     z-index: 2;
   }
 
