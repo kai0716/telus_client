@@ -1,5 +1,6 @@
 import './App.scss';
 import TopNav from './components/TopNav';
+import ChannelsNav from './components/ChannelsNav';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <div className="a_site__columnRightBackground"></div>
           <div className="a_site__columnRight">
             <TopNav />
+            <ChannelsNav />
           </div>
         </div>
       </section>

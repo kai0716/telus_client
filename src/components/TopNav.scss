@@ -10,6 +10,11 @@
   &__flexrow {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+  &__leftgroup {
+    display: flex;
+    flex-direction: row;
   }
 
   &__Input {
@@ -23,5 +28,17 @@
     &::placeholder {
       color: $color-white;
     }
+  }
+
+  &__rightgroup {
+    display: flex;
+    padding-right: 32px;
+  }
+
+  &__right-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: $spacing-regular;
   }
 }
