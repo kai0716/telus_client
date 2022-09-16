@@ -1,51 +1,57 @@
 .k__section4 {
-  //   background-color: red;
-  width: 1025px;
-  height: 1000px;
+    //   background-color: red;
+    width: 1025px;
+    height: 1000px;
 }
 
 .k-s4 {
-  &__cover {
-    &-img {
-      width: 1025px;
-      height: 362px;
-      object-fit: cover;
-      border-radius: 50px;
-      opacity: 0.7;
-      transition-duration: 1.5s;
+    &__cover {
+        &-img {
+            width: 1025px;
+            height: 362px;
+            object-fit: cover;
+            border-radius: 50px;
+            opacity: 0.7;
+            transition-duration: 1.5s;
+            position: relative;
+
+            :after {
+                position: absolute;
+                content: " - Remember this Movie";
+            }
+        }
     }
-  }
 
-  &__list-img {
-    width: 324px;
-    height: 189px;
-    object-fit: cover;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    margin-right: 17px;
-  }
+    &__list-img {
+        width: 324px;
+        height: 189px;
+        object-fit: cover;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        margin-right: 17px;
+    }
 
-  &__title {
-    padding-top: 36px;
-    padding-bottom: 20px;
-    margin: 0%;
-  }
+    &__title {
+        padding-top: 36px;
+        padding-bottom: 20px;
+        margin: 0%;
+    }
 
-  &__img-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-  }
+    &__img-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
 }
 
 p {
-  color: rgba(236, 236, 236, 1);
+    color: rgba(236, 236, 236, 1);
 }
 
 .k-s4__cover-img:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 MDBModalTitle {
-  background-color: gold;
+    background-color: gold;
 }
