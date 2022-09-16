@@ -1,1 +1,26 @@
 @use '../styles/index.scss' as *;
+
+.a_modal {
+  &__header {
+  }
+  &__xButton {
+  }
+  &__screen {
+  }
+
+  &__bottomSection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 42px;
+  }
+
+  &__episodesText {
+    font-size: 24px;
+    color: $color-grey;
+    font-weight: 600;
+  }
+
+  &__divider1 {
+    width: 720px;
+  }
+}
