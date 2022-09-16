@@ -1,0 +1,68 @@
+@use '../styles/index.scss' as *;
+
+.a_topnav {
+  padding-top: 55px;
+
+  &__logo {
+    padding-left: 32px;
+    padding-right: 55px;
+    filter: brightness(135%);
+  }
+  &__flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__leftgroup {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__Input {
+    width: 541px;
+    height: 50px;
+    color: $color-white;
+    background-color: $color-purple-light;
+    border: solid $color-white;
+    padding: $spacing-small;
+    border-radius: 10px;
+    outline-color: $color-white;
+    background-image: url('../assets/figma/search.png') no-repeat right;
+    background-size: 20px;
+    &::placeholder {
+      color: $color-white;
+    }
+  }
+  &__searchIcon {
+    position: absolute;
+    left: 845px;
+    top: 66px;
+    z-index: 2;
+  }
+
+  &__rightgroup {
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+  }
+
+  &__right-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: $spacing-regular;
+  }
+
+  &__flex {
+    padding-top: 2px;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  &__name {
+    font-size: 18px;
+  }
+  &__premium {
+    font-size: 16px;
+  }
+}

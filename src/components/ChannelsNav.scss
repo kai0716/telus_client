@@ -1,0 +1,57 @@
+@use '../styles/index.scss' as *;
+
+.a_channelsNav {
+  padding-top: 55px;
+  padding-left: 55px;
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+
+  &__imageBG {
+    border-radius: 24px;
+    background-color: $color-white;
+    width: 132px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $color-purple-dark;
+    }
+  }
+
+  &__netflix {
+    width: 132px;
+    padding: $spacing-small;
+  }
+  &__amazon {
+    width: 100px;
+    padding: $spacing-small;
+  }
+  &__hbo {
+    width: 132px;
+    padding: $spacing-xxsmall;
+    &:hover {
+      filter: invert(1);
+    }
+  }
+  &__hayu {
+    width: 100px;
+    padding-left: 10px;
+  }
+  &__apple {
+    width: 90px;
+    padding: $spacing-small;
+    padding-top: 12px;
+    &:hover {
+      filter: invert(1);
+    }
+  }
+}
+
+// .a_modal {
+//   position: relative;
+//   z-index: 10;
+//   background-color: '#ffffff';
+//   padding: '10px';
+// }

@@ -1,0 +1,32 @@
+@use '../styles/index.scss' as *;
+
+.a_leftNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+  gap: 23px;
+  &__home {
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+}
+.a_leftNav img {
+  filter: brightness(100);
+  width: 26px;
+}
+.a_leftNav p {
+  padding-bottom: 18px;
+  font-weight: bold;
+}
+
+.--back {
+  background-color: $color-purple-light;
+  border-radius: 10px;
+  padding-top: 5px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

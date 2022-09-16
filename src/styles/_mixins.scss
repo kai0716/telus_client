@@ -1,0 +1,51 @@
+@use './_variables' as *;
+
+$tablet-media-width: 768px;
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// FONT-SIZE  LINE-HEIGHT  FONT-WEIGHT
+// FORMAT: $list(font-width,line-height,font-weight)
+//  PASS A LIST (values in pixels) TO A FUNCTION FOR FORMATTING //
+@mixin setFontFormat($size, $lineHeight, $weight) {
+  font-size: calc($size / 16) + rem;
+  line-height: calc($lineHeight/16) + rem;
+  font-weight: #{$weight};
+}
+
+/** MAIN LAYOUT SPACING  **/
+@mixin layoutSpacing {
+  padding-left: $padding-sm;
+  padding-right: $padding-sm;
+  @include tablet {
+    padding-left: $padding-md;
+    padding-right: $padding-md;
+  }
+  @include desktop {
+    padding-left: $padding-lg;
+    padding-right: $padding-lg;
+  }
+}
+
+// GENERAL SPACING FOR WEB SITE
+@mixin spacing {
+  padding-left: $spacing-small;
+  padding-right: $spacing-small;
+  padding-top: $spacing-small;
+  @content;
+
+  @include tablet {
+    padding-left: $spacing-regular;
+    padding-right: $spacing-regular;
+    padding-top: $spacing-regular;
+  }
+}
