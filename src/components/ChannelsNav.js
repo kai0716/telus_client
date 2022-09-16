@@ -62,6 +62,8 @@ function ChannelsNav(props) {
         <img src={HBOLogo} className="a_channelsNav__hbo" alt="HBO Max" />
       </div>
       <div className="a_channelsNav__netflixBG"></div>
+      <p style={{ paddingTop: "30px", fontSize: "26px" }}>View All</p>
+
     </div>
   );
 }

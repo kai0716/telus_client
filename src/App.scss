@@ -22,6 +22,7 @@
     height: 1300px;
     background-color: #363636;
   }
+
   &__columnLeft {
     width: 120px;
     height: 1300px;
@@ -31,10 +32,12 @@
     position: absolute;
     z-index: 1;
   }
+
   &__columnRightBackground {
     background-color: $color-purple-dark;
     width: 100px;
   }
+
   &__columnRight {
     width: 1479px;
     height: 1300px;
@@ -44,7 +47,9 @@
     position: absolute;
     z-index: 1;
   }
+
   &__flexboxContent {
     display: flex;
+    margin-top: 20px;
   }
 }

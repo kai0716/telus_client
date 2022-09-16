@@ -1,5 +1,13 @@
 import image from '../../assets/images/image1.png';
 import image0 from '../../assets/images/image0.png';
+import netflixCover1 from '../../assets/images/netflix/cover1.png';
+import netflixCover2 from '../../assets/images/netflix/cover2.png';
+import netflixCover3 from '../../assets/images/netflix/cover3.png';
+
+import primeCover1 from '../../assets/images/prime/cover1.png';
+import primeCover2 from '../../assets/images/prime/cover2.png';
+import primeCover3 from '../../assets/images/prime/cover3.png';
+
 import './Section4.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -23,28 +31,86 @@ export default function Section4(props) {
   return (
     <div className="k__section4">
       <div className="k-s4__cover">
-        <Carousel onClick={() => setIsOpen(true)}>
+        <Carousel
+          className="k-s4__onCLickModal"
+          onClick={() => setIsOpen(true)}
+        >
           <Carousel.Item interval={5000}>
-            <img className="k-s4__cover-img" src={image} alt="First slide" />
+            {channel === 'none' ? (
+              <img
+                className="k-s4__cover-img"
+                src={primeCover3}
+                alt="Second slide"
+              />
+            ) : channel === 'prime' ? (
+              <img
+                className="k-s4__cover-img"
+                src={primeCover1}
+                alt="Second slide"
+              />
+            ) : (
+              <img
+                className="k-s4__cover-img"
+                src={netflixCover1}
+                alt="Second slide"
+              />
+            )}
             <Carousel.Caption>
-              <h3 className="k-s4__onCLickModal">First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3
+              // className="k-s4__onCLickModal"
+              // onClick={() => setIsOpen(true)}
+              >
+                First slide label
+              </h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
-            <img className="k-s4__cover-img" src={image0} alt="Second slide" />
+            {channel === 'none' ? (
+              <img
+                className="k-s4__cover-img"
+                src={netflixCover3}
+                alt="Second slide"
+              />
+            ) : channel === 'prime' ? (
+              <img
+                className="k-s4__cover-img"
+                src={primeCover2}
+                alt="Second slide"
+              />
+            ) : (
+              <img
+                className="k-s4__cover-img"
+                src={netflixCover2}
+                alt="Second slide"
+              />
+            )}
+
             <Carousel.Caption>
               <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
-            <img className="k-s4__cover-img" src={image} alt="Third slide" />
+            {channel === 'none' ? (
+              <img
+                className="k-s4__cover-img"
+                src={primeCover1}
+                alt="Second slide"
+              />
+            ) : channel === 'prime' ? (
+              <img
+                className="k-s4__cover-img"
+                src={primeCover3}
+                alt="Second slide"
+              />
+            ) : (
+              <img
+                className="k-s4__cover-img"
+                src={netflixCover3}
+                alt="Second slide"
+              />
+            )}
             <Carousel.Caption>
               <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

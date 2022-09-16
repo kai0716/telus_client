@@ -1,5 +1,6 @@
 .k__section5 {
     height: 100vh;
+    padding-left: 50px;
 }
 
 .k-s5 {
@@ -17,7 +18,7 @@
     }
 
     &__more-video {
-        padding-bottom: 76px;
+        padding-bottom: 26px;
     }
 
     &__continue {
@@ -30,10 +31,25 @@
             margin-bottom: 32px;
             margin-right: 26px;
             object-fit: cover;
+            border-radius: 23px;
         }
 
-        &-info {}
+        &-info {
+            padding-top: 30px;
+        }
 
+        &-img1 {
+            width: 75px;
+            height: 75px;
+            margin-bottom: 32px;
+            margin-right: 26px;
+            object-fit: cover;
+            border-radius: 23px;
+        }
+
+        &-info1 {
+            padding-top: 10px;
+        }
     }
 
     p {
