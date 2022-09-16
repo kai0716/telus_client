@@ -7,6 +7,7 @@ import Section5 from './components/Section5/Section5';
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage/MainPage';
+import SecondPage from './pages/SecondPage/SecondPage';
 
 function App() {
   const [channel, setChannel] = useState('none');
@@ -17,7 +18,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/likes" exact element={<MainPage />} />
+        <Route path="/andre" exact element={<MainPage />} />
+        <Route path="/likes" exact element={<SecondPage />} />
         <Route
           path="/"
           exact
