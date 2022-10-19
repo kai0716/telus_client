@@ -1,4 +1,4 @@
-# A one day hackathon project from telus.
+# A one day hackathon project from Telus.
 Developers :Kaijian Zhang, André Foulem
 
 UX designers: Emily Wong, Mehek Contractor, Rozette Mallari
